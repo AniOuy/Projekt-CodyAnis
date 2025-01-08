@@ -3,9 +3,43 @@ body{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Ubuntu', sans-serif;
 }
 
 :root {
     --gold: #F2B755;
     --gray: #222222;
+}
+
+
+.container{
+    height:100%;
+    width:100%;
+}
+
+/*header*/
+
+.header{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    height:100px;
+    width:100%;
+}
+
+.header>.categories{
+    display:flex;
+    flex-direction:row;
+}
+
+.header>.categories>ul{
+    display:flex;
+    flex-direction:row;
+}
+
+.header>.categories>ul>li>a{
+    padding:0px 15px;
+    color:black;
+    text-decoration:none;
 }
