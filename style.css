@@ -30,6 +30,10 @@ body{
     border-bottom: #F2B755 solid 1.5px;
 }
 
+.header>.logo>img{
+    height:100px;
+}
+
 .header>.categories{
     display:flex;
     flex-direction:row;
