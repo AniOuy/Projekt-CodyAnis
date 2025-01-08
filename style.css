@@ -4,3 +4,8 @@ body{
     padding:0;
     box-sizing:border-box;
 }
+
+:root {
+    --gold: #F2B755;
+    --gray: #222222;
+}
