@@ -59,11 +59,14 @@ body{
     margin-right:0px;
 }
 
+.header>.categories>ul>li:hover{
+    transition:all 2s;
+    transform:scale(1.35);
+}
 
 .categories>ul>li>a:hover{
     transition:all 3s;
     color:#F2B755;
-    /*!!! transform: scale(1.25); geht hier nicht da du keine schrift scalen kannst sondern nur divs oder halt bildler*/
 }
 
 .Profil>button{
@@ -81,5 +84,5 @@ body{
     transition:all 3s;
     transform:scale(1.25);
     font-weight:bold;
-
+    border:none;
 }
