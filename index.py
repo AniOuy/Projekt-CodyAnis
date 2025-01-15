@@ -10,7 +10,7 @@ pr_pizza = 3.5
 
 total_price = 0
 
-l1 = CTkLabel(root, text="A&C", font=("Arial", 65))
+l1 = CTkLabel(root, text="A&C", font=("Arial", 60, "bold"))
 l1.place(x=25, y=15)
 
 f1 = CTkFrame(root, width=990, bg_color="red")
@@ -36,7 +36,7 @@ def buttonFunction_addPizza():
             total_price = total_price + quantity * pr_pizza  
             print("Quantity:", anz_pizza)
             print("Total Price: €", total_price)
-            total_price_label.configure(text=f"Total Price: €{total_price:.2f}")
+            total_price_label.configure(text=f"Total Price: {total_price:.2f}€")
             anzahl.destroy()
         except ValueError:
             print("Bitte geben Sie eine gültige Anzahl ein.")
@@ -50,7 +50,7 @@ def buttonFunction_addPizza():
 add_pizza = CTkButton(f1, text="Buy Pizza", command=buttonFunction_addPizza)
 add_pizza.pack()
 
-total_price_label = CTkLabel(root, text=f"Total Price: €{total_price:.2f}")
+total_price_label = CTkLabel(root, text=f"Total Price: {total_price:.2f}€")
 total_price_label.place(x=15, y=500)
 
 buy_btn = CTkButton(root, text="Buy", width=990, command=lambda: print("Buy button clicked"))
