@@ -86,3 +86,47 @@ body{
     font-weight:bold;
     border:none;
 }
+
+
+
+/*Speisekarte*/
+
+.speisekarte{
+    display:flex;
+    flex-direction:column;
+    margin-left:65px;
+}
+
+.speisekarte>.con{
+    display:flex;
+    flex-direction:column;
+    height:350px;
+    width:85%;
+    border-radius:25px;
+}
+
+.speisekarte>.con>h1{
+    margin-left:25px;
+    margin:10px 15px;
+    padding:0;
+}
+
+.speisekarte>.con>.food-con{
+    display:flex;
+    flex-direction:row;
+}
+
+.speisekarte>.con>.food-con>.food{
+    border:solid 2px white;
+    border-radius:25px;
+    width:250px;
+    height:75%;
+    padding:15px;
+    margin:55px 15px;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.speisekarte>.con>.food-con>.food>p{
+    color:#F2B755;
+}
