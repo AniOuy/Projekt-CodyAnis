@@ -106,6 +106,8 @@ body{
 }
 
 .speisekarte>.con>h1{
+    font-size:65px;
+    text-decoration:underline;
     margin-left:25px;
     margin:10px 15px;
     padding:0;
@@ -114,17 +116,28 @@ body{
 .speisekarte>.con>.food-con{
     display:flex;
     flex-direction:row;
+    margin-top:25px;
 }
 
 .speisekarte>.con>.food-con>.food{
     border:solid 2px white;
     border-radius:25px;
     width:250px;
-    height:75%;
     padding:15px;
     margin:55px 15px;
     margin-top:0;
     margin-bottom:0;
+    width:100%;
+}
+
+.speisekarte>.con>.food-con>.food:hover{
+    border:solid 2px #F2B755;
+    transition:all 1.5s ease-in-out;
+    transform:scale(1.15);
+}
+
+.speisekarte>.con>.food-con>.food>img{
+    border-radius:15px;
 }
 
 .speisekarte>.con>.food-con>.food>p{
