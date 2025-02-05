@@ -11,11 +11,11 @@ pr_pizza = 3.5
 total_price = 0
 
 l1 = CTkLabel(root, text="A&C", font=("Arial", 60, "bold"))
-l1.place(x=25, y=15)
+l1.place(x=15, y=15)
 
-f1 = CTkFrame(root, width=990, bg_color="red")
-f1.place(x=15, y=100)
 
+'''
+-->MAIN FUNCTION
 def buttonFunction_addPizza():
     global anz_pizza
 
@@ -47,13 +47,23 @@ def buttonFunction_addPizza():
 
     anzahl.mainloop()
 
-add_pizza = CTkButton(f1, text="Buy Pizza", command=buttonFunction_addPizza)
+add_pizza = CTkButton(root, text="Buy Pizza", command=buttonFunction_addPizza)
 add_pizza.pack()
+'''
+
+#Choosing your items
+pizza_title = CTkLabel(root, text="Pizza", font=("Arial", 35, "bold"))
+pizza_title.place(x=15, y=100)
 
 total_price_label = CTkLabel(root, text=f"Total Price: {total_price:.2f}€")
 total_price_label.place(x=15, y=500)
 
-buy_btn = CTkButton(root, text="Buy", width=990, command=lambda: print("Buy button clicked"))
+# END PROCESS --> Buy BTN
+def buttonFunction_buy():
+    global total_price
+    print("Total Price: ", total_price, "€.")
+
+buy_btn = CTkButton(root, text="Buy", width=990, command=buttonFunction_buy)
 buy_btn.place(x=17.5, y=525)
 
 root.mainloop()
