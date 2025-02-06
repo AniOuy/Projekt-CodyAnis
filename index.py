@@ -160,8 +160,8 @@ def buttonFunction_addPizzahawai():
 
     anzahl.mainloop()
 
-add_pizzasalamai = CTkButton(root, text="Pizza Tuhnfisch", command=buttonFunction_addPizzatuhnfisch)
-add_pizzasalamai.place(x=500, y=150)
+add_pizzahawai = CTkButton(root, text="Pizza Tuhnfisch", command=buttonFunction_addPizzatuhnfisch)
+add_pizzahawai.place(x=500, y=150)
 
 def buttonFunction_addPizzatuhnfisch():
     global anz_pizza
@@ -193,10 +193,8 @@ def buttonFunction_addPizzatuhnfisch():
 
     anzahl.mainloop()
 
-add_pizzasalamai = CTkButton(root, text="Pizza Hawai", command=buttonFunction_addPizzahawai)
-add_pizzasalamai.place(x=500, y=150)
-
-
+add_pizzatuhnfisch = CTkButton(root, text="Pizza Hawai", command=buttonFunction_addPizzahawai)
+add_pizzatuhnfisch.place(x=500, y=150)
 
 
 total_price_label = CTkLabel(root, text=f"Total Price: {total_price:.2f}€")
