@@ -7,11 +7,11 @@ root.resizable(False, False)
 
 #PIZZA
 
-anz_pizza = 0.00
-anz_pizzafunghi = 0.00
-anz_pizzasalami = 0.00
-anz_pizzatuhnfisch = 0.00
-anz_pizzahawai = 0.00
+anz_pizza = 0
+anz_pizzafunghi = 0
+anz_pizzasalami = 0
+anz_pizzatuhnfisch = 0
+anz_pizzahawai = 0
 
 pr_pizza = 3.5
 pr_pizzafunghi = 3.75
