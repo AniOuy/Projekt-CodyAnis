@@ -5,13 +5,19 @@ root.title("Test - CustomTkinter")
 root.geometry("1024x568")
 root.resizable(False, False)
 
-anz_pizza = 0
-anz_pizzafunghi = 0
-anz_pizzasalami = 0
+#PIZZA
+
+anz_pizza = 0.00
+anz_pizzafunghi = 0.00
+anz_pizzasalami = 0.00
+anz_pizzatuhnfisch = 0.00
+anz_pizzahawai = 0.00
 
 pr_pizza = 3.5
 pr_pizzafunghi = 3.75
 pr_pizzasalamai= 3.75
+pr_pizzatuhnfisch = 3.75
+pr_pizzahawai = 4.00
 
 total_price = 0
 
@@ -57,7 +63,7 @@ add_pizza = CTkButton(root, text="Pizza", command=buttonFunction_addPizza)
 add_pizza.place(x=15, y=150)
 
 def buttonFunction_addPizzafunghi():
-    global anz_pizza
+    global anz_pizzafunghi
 
     anzahl = CTk()
     anzahl.title("Anzahl")
@@ -69,7 +75,7 @@ def buttonFunction_addPizzafunghi():
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
-        global anz_pizza, total_price
+        global anz_pizzafunghi, total_price
         try:
             quantity = int(anzahl_input.get())
             anz_pizza = anz_pizzafunghi + quantity
@@ -90,7 +96,7 @@ add_pizzafunghi = CTkButton(root, text="Pizza Funghi", command=buttonFunction_ad
 add_pizzafunghi.place(x=175, y=150)
 
 def buttonFunction_addPizzasalami():
-    global anz_pizza
+    global anz_pizzasalami
 
     anzahl = CTk()
     anzahl.title("Anzahl")
@@ -102,7 +108,7 @@ def buttonFunction_addPizzasalami():
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
-        global anz_pizza, total_price
+        global anz_pizzasalami, total_price
         try:
             quantity = int(anzahl_input.get())
             anz_pizza = anz_pizzasalami + quantity
@@ -119,8 +125,79 @@ def buttonFunction_addPizzasalami():
 
     anzahl.mainloop()
 
-add_pizzasalamai = CTkButton(root, text="Pizza Funghi", command=buttonFunction_addPizzasalami)
+add_pizzasalamai = CTkButton(root, text="Pizza Salami", command=buttonFunction_addPizzasalami)
 add_pizzasalamai.place(x=335, y=150)
+
+
+
+def buttonFunction_addPizzahawai():
+    global anz_pizzahawai
+
+    anzahl = CTk()
+    anzahl.title("Anzahl")
+    anzahl.geometry("550x450")
+    anzahl.resizable(False, False)
+
+    anzahl_input = CTkEntry(anzahl, width=275)
+    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
+    anzahl_input.pack()
+
+    def buttonFunction_anzpizza():
+        global anz_pizza, total_price
+        try:
+            quantity = int(anzahl_input.get())
+            anz_pizza = anz_pizzahawai + quantity
+            total_price = total_price + quantity * pr_pizzahawai
+            print("Quantity:", anz_pizza)
+            print("Total Price: €", total_price)
+            total_price_label.configure(text=f"Total Price: {total_price:.2f}€")
+            anzahl.destroy()
+        except ValueError:
+            print("Bitte geben Sie eine gültige Anzahl ein.")
+
+    anzahl_btn = CTkButton(anzahl, text="Apply", command=buttonFunction_anzpizza)
+    anzahl_btn.pack()
+
+    anzahl.mainloop()
+
+add_pizzasalamai = CTkButton(root, text="Pizza Tuhnfisch", command=buttonFunction_addPizzatuhnfisch)
+add_pizzasalamai.place(x=500, y=150)
+
+def buttonFunction_addPizzatuhnfisch():
+    global anz_pizza
+
+    anzahl = CTk()
+    anzahl.title("Anzahl")
+    anzahl.geometry("550x450")
+    anzahl.resizable(False, False)
+
+    anzahl_input = CTkEntry(anzahl, width=275)
+    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
+    anzahl_input.pack()
+
+    def buttonFunction_anzpizza():
+        global anz_pizza, total_price
+        try:
+            quantity = int(anzahl_input.get())
+            anz_pizza = anz_pizzatuhnfisch + quantity
+            total_price = total_price + quantity * pr_pizzatuhnfisch
+            print("Quantity:", anz_pizza)
+            print("Total Price: €", total_price)
+            total_price_label.configure(text=f"Total Price: {total_price:.2f}€")
+            anzahl.destroy()
+        except ValueError:
+            print("Bitte geben Sie eine gültige Anzahl ein.")
+
+    anzahl_btn = CTkButton(anzahl, text="Apply", command=buttonFunction_anzpizza)
+    anzahl_btn.pack()
+
+    anzahl.mainloop()
+
+add_pizzasalamai = CTkButton(root, text="Pizza Hawai", command=buttonFunction_addPizzahawai)
+add_pizzasalamai.place(x=500, y=150)
+
+
+
 
 total_price_label = CTkLabel(root, text=f"Total Price: {total_price:.2f}€")
 total_price_label.place(x=15, y=500)
