@@ -1,5 +1,18 @@
 pizza->5 Gerichte zum aussuchen
-pasta->5 Gerichte zum aussuchen
+    pizza
+    pizzafunghi
+    pizzasalamai
+    pizzatuhnifsch
+    pizzahawai
 salat->5 Gerichte zum aussuchen
-
-desert->3
+    hirtensalat
+    salatbeef
+    tuhnifschsteaksalat
+    garnelensalat
+pasta->5 Gerichte zum aussuchen
+    tagliatellegarnellen
+    pennechampignons
+    tagliatellepesto
+    penneallarrabiata
+    tagliatellegyros
+    
