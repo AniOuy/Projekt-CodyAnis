@@ -555,9 +555,9 @@ def buttonFunction_buy():
     e_vorname.pack(pady=15)
     e_vorname.insert(0, "Vorname")
 
-    e_email = CTkEntry(pay, width=275)
-    e_email.pack(pady=15)
-    e_email.insert(0, "E-Mail Adresse")
+    e_nummer = CTkEntry(pay, width=275)
+    e_nummer.pack(pady=15)
+    e_nummer.insert(0, "Telefonnummer")
 
     e_bank = CTkEntry(pay, width=275)
     e_bank.pack(pady=15)
