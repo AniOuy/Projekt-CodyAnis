@@ -291,7 +291,7 @@ def buttonFunction_addtuhnfischsteaksalat():
 
     anzahl.mainloop()
 
-add_tuhnfischsteaksalat = CTkButton(root, text="Pizza Salami", command=buttonFunction_addtuhnfischsteaksalat)
+add_tuhnfischsteaksalat = CTkButton(root, text="Tuhnfisch Salat", command=buttonFunction_addtuhnfischsteaksalat)
 add_tuhnfischsteaksalat.place(x=335, y=275)
 
 def buttonFunction_addananassalat():
