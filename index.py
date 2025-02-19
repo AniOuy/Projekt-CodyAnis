@@ -39,7 +39,6 @@ def buttonFunction_addPizza():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -58,7 +57,7 @@ def buttonFunction_addPizza():
 
     anzahl.mainloop()
 #-->End of MAIN FUNCTION
-add_pizza = CTkButton(root, text="Pizza", command=buttonFunction_addPizza)
+add_pizza = CTkButton(root, text="Pizza Margarita", command=buttonFunction_addPizza)
 add_pizza.place(x=15, y=150)
 
 def buttonFunction_addPizzafunghi():
@@ -70,7 +69,6 @@ def buttonFunction_addPizzafunghi():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -101,7 +99,6 @@ def buttonFunction_addPizzasalami():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -132,7 +129,6 @@ def buttonFunction_addPizzatuhnfisch():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -163,7 +159,6 @@ def buttonFunction_addPizzahawai():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -210,7 +205,6 @@ def buttonFunction_addhirtensalat():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -241,7 +235,6 @@ def buttonFunction_addsalatbeef():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -272,7 +265,6 @@ def buttonFunction_addtuhnfischsteaksalat():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -303,7 +295,6 @@ def buttonFunction_addananassalat():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -334,7 +325,6 @@ def buttonFunction_addgarnelensalat():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -381,7 +371,6 @@ def buttonFunction_addtagliatellegarnellen():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -412,7 +401,6 @@ def buttonFunction_addpennechampignons():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -443,7 +431,6 @@ def buttonFunction_addtagliatellepesto():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -474,7 +461,6 @@ def buttonFunction_addpenneallarrabiata():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
@@ -505,7 +491,6 @@ def buttonFunction_addtagliatellegyros():
     anzahl.resizable(False, False)
 
     anzahl_input = CTkEntry(anzahl, width=275)
-    anzahl_input.insert(0, "Anzahl die sie kaufen wollen")
     anzahl_input.pack()
 
     def buttonFunction_anzpizza():
